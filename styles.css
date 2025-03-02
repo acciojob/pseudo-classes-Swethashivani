@@ -1,1 +1,48 @@
-/*  your css code here. If applicable */
+:root {
+    background-color: rgb(135, 206, 235); /* Sets the background color for the entire page */
+}
+
+/* First paragraph: White text on black background */
+p:first-child {
+    color: white;
+    background-color: black;
+}
+
+/* Second paragraph: Standard text color */
+p:nth-child(2) {
+    color: initial; /* Resets to default text color */
+}
+
+/* Last paragraph: Red text */
+p:last-child {
+    color: red;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;
+    width: 50%; /* Set the width of the list */
+}
+
+li {
+    background-color: gray; /* Default background */
+    padding: 10px;
+    width: 100%; /* Ensures full width within 50% parent */
+}
+
+/* Every odd item gets a white background */
+li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items get font size of 22px */
+li:first-child,
+li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item gets a pink background */
+li:nth-last-child(3) {
+    background-color: pink;
+}
